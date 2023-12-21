@@ -10943,20 +10943,30 @@ video.bg-video {
     width: 65vw;
   }
 }
+
+/* social media icon */
 .social-icons {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .social-icons .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   height: 4rem;
   width: 4rem;
   border-radius: 100rem;
+  transition: transform 0.5s ease-in-out;
 }
-
+.btn:hover {
+  transform: translateY(-8px);
+  background-color: orangered;
+  border-color:#000;
+}
 @media (min-width: 992px) {
   .social-icons {
     position: absolute;
@@ -10964,5 +10974,7 @@ video.bg-video {
     top: 0;
     right: 2.5rem;
     width: auto;
+    display: flex;
+    align-items: center;
   }
 }
